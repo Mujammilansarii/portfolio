@@ -1,150 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#07161d" />
-  <meta name="description" content="Mujammil Ansari helps businesses build cleaner reporting systems, inventory trackers, and payroll dashboards using Google Sheets, Excel, and Power BI." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07131c">
+  <meta name="description" content="Mujammil Ansari builds smart Google Sheets, payroll and inventory systems, MIS dashboards, and Power BI reports for businesses.">
   <title>Mujammil Ansari | Data Analyst & Reporting Specialist</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    :root{
-      --bg:#07161d;
-      --bg-2:#0d1d29;
-      --panel:#0f1d2a;
-      --panel-2:#12273a;
-      --card:#0f2231;
-      --line:rgba(180,209,220,.12);
-      --line-strong:rgba(184,228,227,.28);
-      --text:#eef5f7;
-      --muted:#a7b8c3;
-      --soft:#dfeaf0;
-      --accent:#bfeee7;
-      --accent-strong:#dffaf4;
-      --gold:#e7d7a7;
-      --success:#8fe5c0;
-      --warning:#f7d8a0;
-      --danger:#f09c9c;
-      --shadow:0 22px 60px rgba(0,0,0,.25);
-      --radius:22px;
-      --width:1180px;
-    }
-
-    *{box-sizing:border-box} html{scroll-behavior:smooth;scroll-padding-top:100px} body{margin:0;background:radial-gradient(circle at 18% -10%,rgba(191,238,231,.10),transparent 26%),radial-gradient(circle at 100% 18%,rgba(191,238,231,.06),transparent 30%),linear-gradient(180deg,#07161d 0%,#0b1c26 48%,#07161d 100%);color:var(--text);font:16px/1.7 'DM Sans',sans-serif} body::before, body::after{content:"";position:fixed;inset:auto;pointer-events:none;border-radius:50%;filter:blur(90px);opacity:.32;z-index:0} body::before{width:380px;height:380px;background:rgba(120,190,210,.12);left:-90px;top:120px} body::after{width:420px;height:420px;background:rgba(191,238,231,.08);right:-120px;bottom:60px} a{color:inherit;text-decoration:none} button,input,textarea{font:inherit} img{max-width:100%;display:block} .wrap{width:min(var(--width),calc(100% - 34px));margin:0 auto;position:relative;z-index:1}.glass{background:linear-gradient(145deg,rgba(17,31,41,.94),rgba(9,17,24,.97));border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);backdrop-filter:blur(18px)}
-    .top{position:sticky;top:10px;z-index:20;padding-top:12px}.nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:12px 16px 12px 20px;background:rgba(9,20,28,.72);backdrop-filter:blur(18px)}.brand{font:800 15px/1.2 'Manrope',sans-serif;letter-spacing:.18em;color:var(--accent-strong);white-space:nowrap}.links{display:flex;align-items:center;gap:24px;color:var(--muted);font-size:13px}.links a{transition:color .2s ease}.links a:hover{color:var(--text)}.nav-cta,.button{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 18px;border-radius:12px;font-size:13px;font-weight:800;letter-spacing:.02em;transition:transform .25s cubic-bezier(.2,.7,.2,1),box-shadow .25s ease,border-color .25s ease,background .25s ease}.nav-cta,.button.primary{color:#0c1e1a;background:linear-gradient(135deg,#e0faf5,#bfeee7);box-shadow:0 12px 30px rgba(191,238,231,.12)}.nav-cta:hover,.button:hover{transform:translateY(-3px);box-shadow:0 16px 30px rgba(191,238,231,.18)}.button.secondary{border:1px solid var(--line);background:rgba(255,255,255,.02);color:var(--text)}.button.secondary:hover{border-color:var(--line-strong);background:rgba(191,238,231,.04)}
-    .hero{padding:64px 0 20px;display:grid;grid-template-columns:1.12fr .88fr;gap:22px;align-items:stretch}.hero-main{padding:38px;position:relative;overflow:hidden}.hero-main:before{content:"";position:absolute;inset:auto -90px -90px auto;width:220px;height:220px;border-radius:50%;border:1px solid rgba(191,238,231,.10);box-shadow:0 0 0 30px rgba(191,238,231,.02),0 0 0 62px rgba(191,238,231,.015);pointer-events:none}.eyebrow,.kicker{display:inline-flex;align-items:center;gap:8px;padding:6px 11px;border:1px solid rgba(191,238,231,.25);background:rgba(191,238,231,.05);border-radius:999px;color:var(--accent);font-size:11px;font-weight:800;letter-spacing:.11em;text-transform:uppercase}.hero h1{margin:18px 0 15px;font:800 clamp(42px,5.5vw,72px)/1.02 'Manrope',sans-serif;letter-spacing:-.075em}.hero h1 span{display:block;color:var(--accent)}.hero p{margin:0 0 24px;color:var(--muted);max-width:590px;font-size:16px}.actions{display:flex;flex-wrap:wrap;gap:12px}.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:26px}.stat{padding:15px 14px;border:1px solid var(--line);border-radius:13px;background:rgba(255,255,255,.015)}.stat b{display:block;color:var(--accent-strong);font:800 18px 'Manrope',sans-serif}.stat span{display:block;color:var(--muted);font-size:11px;line-height:1.5;margin-top:4px}.showcase{display:grid;gap:15px}.showcase .glass{animation:floatCard 7s ease-in-out infinite}.showcase .glass:nth-child(2){animation-delay:1.2s}.sheet,.proof,.about,.service,.skill,.project,.exp,.contact-panel,.step{transition:transform .28s cubic-bezier(.2,.7,.2,1),border-color .28s ease,box-shadow .28s ease,background .28s ease}.sheet{padding:18px}.sheet-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:12px;color:var(--muted);font-size:12px}.sheet-head b{font-weight:700;color:var(--text)}.live{color:var(--accent)} table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:11px 7px;border-bottom:1px solid var(--line)}th{color:var(--muted);font-weight:500}.tag{display:inline-flex;padding:4px 8px;border-radius:999px;font-size:10px;font-weight:700}.tag.ok{color:var(--success);background:rgba(143,229,192,.08)}.tag.low{color:var(--warning);background:rgba(247,216,160,.08)}.tag.out{color:var(--danger);background:rgba(240,156,156,.08)}.proof{padding:19px;display:flex;align-items:center;gap:12px}.proof-icon{width:42px;height:42px;border-radius:12px;border:1px solid rgba(191,238,231,.25);background:rgba(191,238,231,.06);display:grid;place-items:center;color:var(--accent);font-size:18px}.proof b{display:block;font:700 14px/1.3 'Manrope',sans-serif}.proof span{color:var(--muted);font-size:11px}
-    section{padding-top:78px}.section-title{text-align:center;max-width:720px;margin:0 auto 26px}.section-title h2{font:800 clamp(28px,4vw,42px)/1.2 'Manrope',sans-serif;letter-spacing:-.05em;margin:12px 0 8px}.section-title p{color:var(--muted);margin:0;font-size:15px}.about{padding:27px}.about h3{font:700 22px 'Manrope',sans-serif;margin:0 0 9px}.about>p{color:var(--muted);margin:0}.experience{display:grid;grid-template-columns:repeat(2,1fr);gap:13px;margin-top:22px}.exp{padding:18px;border:1px solid var(--line);border-radius:15px;background:rgba(255,255,255,.02)}.exp h3{margin:0 0 5px;font:700 15px 'Manrope',sans-serif;color:var(--accent)}.exp small{font-size:11px;color:var(--muted);display:block;margin-bottom:8px}.exp p{margin:0;color:var(--muted);font-size:13px;line-height:1.65}.filters{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin:20px 0}.filter{color:var(--muted);background:rgba(255,255,255,.02);border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-size:13px;cursor:pointer;transition:transform .2s ease,border-color .2s ease,color .2s ease,background .2s ease}.filter:hover{transform:translateY(-2px)}.filter[aria-pressed=true]{border-color:rgba(191,238,231,.38);background:rgba(191,238,231,.06);color:var(--accent-strong)}.projects{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.project{padding:21px;display:flex;flex-direction:column}.project:hover,.sheet:hover,.proof:hover,.service:hover,.skill:hover,.exp:hover,.contact-panel:hover,.step:hover{transform:translateY(-6px);border-color:var(--line-strong);box-shadow:0 26px 52px rgba(0,0,0,.3)}.category{color:var(--accent);font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}.project h3{font:700 17px/1.3 'Manrope',sans-serif;margin:10px 0}.project p,.project ul{margin:0;color:var(--muted);font-size:12px}.project p{margin-bottom:10px}.project ul{padding-left:18px;list-style:disc;margin-bottom:14px}.project li{margin:3px 0}.tools{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;margin-bottom:14px}.tools span{padding:4px 8px;border-radius:999px;border:1px solid var(--line);font-size:10px;color:var(--muted)}.open{align-self:flex-start;padding:8px 11px;border-radius:9px;border:1px solid rgba(191,238,231,.25);background:rgba(191,238,231,.05);font-size:12px;font-weight:800;color:var(--accent-strong)}.open:hover{background:rgba(191,238,231,.08)}.soon{border-style:dashed}.services,.skills{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.service,.skill{padding:18px}.service-icon{width:40px;height:40px;display:grid;place-items:center;border:1px solid rgba(191,238,231,.26);background:rgba(191,238,231,.06);border-radius:12px;color:var(--accent);font-size:17px}.service h3{margin:12px 0 7px;font:700 15px 'Manrope',sans-serif}.service p{margin:0;color:var(--muted);font-size:12px;line-height:1.7}.skill b{display:block;color:var(--accent-strong);font:700 14px 'Manrope',sans-serif}.skill span{display:block;color:var(--muted);font-size:12px;margin-top:4px}.steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}.step{text-align:center;padding:15px 10px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.01)}.step b{width:42px;height:42px;margin:0 auto 11px;border-radius:50%;display:grid;place-items:center;background:rgba(191,238,231,.04);border:1px solid rgba(191,238,231,.3);color:var(--accent);font:700 12px 'Manrope',sans-serif}.step h3{font:700 14px 'Manrope',sans-serif;margin:0 0 4px}.step p{margin:0;color:var(--muted);font-size:11px;line-height:1.6}.contact{display:grid;grid-template-columns:1.12fr .88fr;gap:15px}.contact-panel{padding:22px}.contact-form{display:grid;gap:13px}.contact-form label{display:grid;gap:5px;color:var(--muted);font-size:12px}.contact-form input,.contact-form textarea{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:rgba(0,0,0,.12);color:var(--text);outline:none;transition:border-color .2s ease,box-shadow .2s ease}.contact-form input:focus,.contact-form textarea:focus{border-color:rgba(191,238,231,.5);box-shadow:0 0 0 3px rgba(191,238,231,.06)}.contact-form textarea{min-height:110px;resize:vertical}.contact-card{display:flex;flex-direction:column;justify-content:center;gap:12px}.contact-card h3{margin:0;font:800 24px 'Manrope',sans-serif}.contact-card p{margin:0;color:var(--muted);font-size:13px;line-height:1.7}.contact-links{display:grid;gap:9px;margin-top:4px}.contact-link{display:flex;justify-content:center;align-items:center;text-align:center;padding:11px;border:1px solid var(--line);border-radius:10px;font-size:12px;font-weight:700;transition:transform .2s ease,border-color .2s ease}.contact-link:hover{transform:translateY(-2px);border-color:var(--line-strong)}.contact-link.highlight{color:var(--accent-strong);background:rgba(191,238,231,.05);border-color:rgba(191,238,231,.25)}footer{padding:34px 0 42px;color:var(--muted);font-size:11px}.foot{padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
-    @media(max-width:980px){.links{display:none}.projects{grid-template-columns:repeat(2,1fr)}.services,.skills{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:700px){.wrap{width:min(var(--width),calc(100% - 24px))}.hero{grid-template-columns:1fr;padding-top:35px}.hero-main{padding:24px 20px}.hero h1{font-size:clamp(40px,11vw,60px)}.stats{grid-template-columns:1fr}.projects,.services,.skills,.experience,.contact{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.nav{padding:10px 11px}.brand{font-size:12px;letter-spacing:.14em}.nav-cta{padding:9px 12px}.about{padding:21px 18px}.project{padding:18px}table{font-size:10px}th,td{padding:9px 5px}}
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
-    @keyframes floatCard{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+    :root{--bg:#07131c;--panel:rgba(15,30,43,.83);--panel2:#102436;--line:rgba(157,205,225,.16);--text:#edf7fb;--muted:#a0b6c4;--cyan:#73e5ee;--blue:#8ba8ff;--mint:#bceee1;--gold:#e8d7a8;--shadow:0 24px 70px rgba(0,0,0,.32);--width:1180px;--rx:0deg;--ry:0deg;--mx:50%;--my:20%}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:95px}body{margin:0;min-height:100vh;overflow-x:hidden;color:var(--text);font:16px/1.7 'DM Sans',sans-serif;background:radial-gradient(ellipse at var(--mx) var(--my),rgba(67,154,184,.13),transparent 30%),radial-gradient(ellipse at 90% 8%,rgba(102,110,220,.12),transparent 28%),linear-gradient(155deg,#07131c,#0b1c29 48%,#07131c)}body:before,body:after{content:"";position:fixed;z-index:0;pointer-events:none;border-radius:50%;filter:blur(75px);opacity:.2}body:before{width:300px;height:300px;top:18%;left:-180px;background:#48d6e5}body:after{width:350px;height:350px;right:-190px;bottom:8%;background:#697dff}a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}.wrap{width:min(var(--width),calc(100% - 36px));margin-inline:auto;position:relative;z-index:1}.glass{background:linear-gradient(145deg,rgba(18,38,53,.86),rgba(9,20,30,.91));border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);backdrop-filter:blur(16px)}
+    .top{position:sticky;top:10px;z-index:20;padding-top:12px}.nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:12px 16px 12px 20px;background:rgba(7,18,27,.76);backdrop-filter:blur(18px)}.brand{font:800 14px/1.2 Manrope,sans-serif;letter-spacing:.16em;color:var(--mint);white-space:nowrap}.links{display:flex;gap:24px;color:var(--muted);font-size:13px}.links a{transition:color .2s}.links a:hover{color:white}.nav-cta,.button{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:11px 17px;border-radius:12px;font-size:13px;font-weight:800;transition:transform .25s,box-shadow .25s,border-color .25s}.nav-cta,.button.primary{color:#06181c;background:linear-gradient(135deg,#c8fff1,#69dbe8);box-shadow:0 10px 28px rgba(86,220,226,.2)}.nav-cta:hover,.button:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(86,220,226,.26)}.button.secondary{border:1px solid var(--line);background:rgba(255,255,255,.025);color:var(--text)}.button.secondary:hover{border-color:rgba(115,229,238,.5)}
+    .hero{min-height:610px;padding:65px 0 34px;display:grid;grid-template-columns:1.04fr .96fr;gap:26px;align-items:center;perspective:1300px}.hero-copy{padding:40px;position:relative;overflow:hidden;transform-style:preserve-3d}.hero-copy:after{content:"";position:absolute;right:-90px;bottom:-170px;width:340px;height:340px;border:1px solid rgba(115,229,238,.13);border-radius:50%;box-shadow:0 0 0 24px rgba(115,229,238,.025),0 0 0 52px rgba(115,229,238,.02),0 0 0 82px rgba(115,229,238,.015);pointer-events:none}.eyebrow,.kicker{display:inline-flex;padding:6px 11px;border:1px solid rgba(115,229,238,.27);background:rgba(115,229,238,.065);border-radius:99px;color:var(--cyan);font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.hero h1{position:relative;z-index:1;margin:20px 0 16px;font:800 clamp(42px,5.4vw,70px)/1.02 Manrope,sans-serif;letter-spacing:-.07em;transform:translateZ(28px)}.hero h1 span{display:block;background:linear-gradient(100deg,#d9fff6 0%,#73e5ee 48%,#94a9ff 100%);-webkit-background-clip:text;background-clip:text;color:transparent}.hero-copy>p{position:relative;z-index:1;color:var(--muted);max-width:570px;font-size:16px;margin:0 0 25px;transform:translateZ(16px)}.actions{display:flex;flex-wrap:wrap;gap:11px;position:relative;z-index:1}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:27px;position:relative;z-index:1}.stat{padding:13px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.025);transform:translateZ(10px)}.stat b{display:block;color:var(--mint);font:800 18px Manrope,sans-serif}.stat span{color:var(--muted);font-size:10px;line-height:1.5}.hero-scene{min-height:420px;position:relative;display:grid;place-items:center;perspective:1000px;isolation:isolate}.scene-grid{position:absolute;inset:5% -5%;opacity:.27;background-image:linear-gradient(rgba(115,229,238,.12) 1px,transparent 1px),linear-gradient(90deg,rgba(115,229,238,.12) 1px,transparent 1px);background-size:35px 35px;mask-image:radial-gradient(ellipse,black 10%,transparent 72%);transform:rotateX(58deg) rotateZ(-24deg) scale(1.1);transform-origin:center}.orb{position:absolute;width:300px;height:300px;border:1px solid rgba(115,229,238,.18);border-radius:50%;box-shadow:inset 0 0 60px rgba(115,229,238,.04),0 0 55px rgba(115,229,238,.08);transform:rotateX(64deg) rotateZ(-22deg)}.orb:before,.orb:after{content:"";position:absolute;inset:24px;border:1px solid rgba(139,168,255,.2);border-radius:50%;transform:rotateY(64deg)}.orb:after{inset:48px;transform:rotateY(-64deg)}.dashboard{position:relative;z-index:2;width:min(390px,95%);padding:19px;border-radius:19px;transform:rotateY(-12deg) rotateX(7deg) rotateZ(1deg);box-shadow:22px 30px 60px rgba(0,0,0,.45),inset 0 1px rgba(255,255,255,.08);animation:dashboardFloat 7s ease-in-out infinite}.dash-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}.dash-title{font:700 13px Manrope,sans-serif}.dash-label{font-size:9px;color:var(--cyan);letter-spacing:.12em;text-transform:uppercase}.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.kpi{padding:10px;border:1px solid var(--line);border-radius:11px;background:rgba(255,255,255,.025)}.kpi small{display:block;color:var(--muted);font-size:9px}.kpi b{font:700 17px Manrope,sans-serif;color:var(--text)}.chart{height:132px;margin:14px 0 11px;padding:10px;border:1px solid var(--line);border-radius:12px;background:linear-gradient(180deg,rgba(115,229,238,.04),rgba(255,255,255,.01));position:relative;overflow:hidden}.chart:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(to bottom,transparent 0 31px,rgba(167,193,205,.1) 32px)}.chart svg{position:relative;z-index:1;width:100%;height:100%;overflow:visible}.chart-line{fill:none;stroke:url(#chartGradient);stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:440;stroke-dashoffset:440;animation:drawLine 2.4s .35s ease forwards}.chart-area{fill:url(#areaGradient);opacity:.65}.dash-foot{display:flex;justify-content:space-between;color:var(--muted);font-size:9px}.float-chip{position:absolute;z-index:3;padding:11px 14px;border:1px solid rgba(115,229,238,.25);border-radius:13px;background:rgba(9,23,33,.88);box-shadow:0 14px 35px rgba(0,0,0,.3);backdrop-filter:blur(12px);font-size:10px;color:var(--muted);animation:chipFloat 5s ease-in-out infinite}.float-chip b{display:block;color:var(--mint);font:700 13px Manrope,sans-serif}.chip-one{top:12%;right:0}.chip-two{bottom:11%;left:0;animation-delay:1.1s}.chip-three{right:1%;bottom:16%;animation-delay:2s}.float-chip span{color:var(--cyan)}
+    section{padding-top:76px}.section-title{text-align:center;max-width:720px;margin:0 auto 27px}.section-title h2{font:800 clamp(28px,4vw,42px)/1.18 Manrope,sans-serif;letter-spacing:-.05em;margin:12px 0 8px}.section-title p{color:var(--muted);margin:0;font-size:14px}.about{padding:27px}.about h3{font:700 21px Manrope,sans-serif;margin:0 0 9px}.about>p{color:var(--muted);margin:0}.experience{display:grid;grid-template-columns:repeat(2,1fr);gap:13px;margin-top:22px}.exp{padding:18px;border:1px solid var(--line);border-radius:15px;background:rgba(255,255,255,.02)}.exp h3{margin:0 0 5px;font:700 14px Manrope,sans-serif;color:var(--cyan)}.exp small{font-size:10px;color:var(--muted);display:block;margin-bottom:8px}.exp p{margin:0;color:var(--muted);font-size:12px;line-height:1.65}.filters{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin:20px 0}.filter{color:var(--muted);background:rgba(255,255,255,.02);border:1px solid var(--line);border-radius:99px;padding:8px 14px;font-size:12px;cursor:pointer;transition:transform .2s,border-color .2s,color .2s,background .2s}.filter:hover{transform:translateY(-2px)}.filter[aria-pressed=true]{border-color:rgba(115,229,238,.4);background:rgba(115,229,238,.08);color:var(--cyan)}.projects{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;perspective:1200px}.project,.service,.skill,.exp,.contact-panel,.step,.sheet,.proof{transform-style:preserve-3d;transition:transform .3s cubic-bezier(.2,.8,.2,1),border-color .25s,box-shadow .3s,background .25s}.project{padding:21px;display:flex;flex-direction:column;--tilt-x:0deg;--tilt-y:0deg;transform:perspective(900px) rotateX(var(--tilt-x)) rotateY(var(--tilt-y));}.project:hover,.service:hover,.skill:hover,.exp:hover,.contact-panel:hover,.step:hover,.sheet:hover,.proof:hover{border-color:rgba(115,229,238,.34);box-shadow:0 25px 55px rgba(0,0,0,.34),0 0 20px rgba(115,229,238,.04)}.project:hover{transform:perspective(900px) rotateX(var(--tilt-x)) rotateY(var(--tilt-y)) translateY(-7px)}.category{color:var(--cyan);font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}.project h3{font:700 17px/1.3 Manrope,sans-serif;margin:9px 0}.project p,.project ul{margin:0;color:var(--muted);font-size:12px}.project p{margin-bottom:10px}.project ul{padding-left:17px;margin-bottom:14px}.project li{margin:3px 0}.tools{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;margin-bottom:14px}.tools span{padding:4px 8px;border-radius:99px;border:1px solid var(--line);font-size:10px;color:var(--muted)}.open{align-self:flex-start;padding:8px 11px;border-radius:9px;border:1px solid rgba(115,229,238,.26);background:rgba(115,229,238,.06);font-size:11px;font-weight:800;color:var(--cyan);transition:background .2s,transform .2s}.open:hover{background:rgba(115,229,238,.12);transform:translateY(-2px)}.soon{border-style:dashed}.services,.skills{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.service,.skill{padding:18px}.service-icon{width:40px;height:40px;display:grid;place-items:center;border:1px solid rgba(115,229,238,.24);background:rgba(115,229,238,.07);border-radius:12px;color:var(--cyan);font-size:17px}.service h3{margin:12px 0 6px;font:700 14px Manrope,sans-serif}.service p{margin:0;color:var(--muted);font-size:12px;line-height:1.7}.skill b{display:block;color:var(--mint);font:700 13px Manrope,sans-serif}.skill span{display:block;color:var(--muted);font-size:11px;margin-top:4px}.steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}.step{text-align:center;padding:15px 10px;border:1px solid var(--line);border-radius:17px;background:rgba(255,255,255,.015)}.step b{width:42px;height:42px;margin:0 auto 11px;border-radius:50%;display:grid;place-items:center;background:rgba(115,229,238,.05);border:1px solid rgba(115,229,238,.28);color:var(--cyan);font:700 12px Manrope,sans-serif}.step h3{font:700 13px Manrope,sans-serif;margin:0 0 4px}.step p{margin:0;color:var(--muted);font-size:10px}.contact{display:grid;grid-template-columns:1.12fr .88fr;gap:15px}.contact-panel{padding:22px}.contact-form{display:grid;gap:13px}.contact-form label{display:grid;gap:5px;color:var(--muted);font-size:12px}.contact-form input,.contact-form textarea{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:rgba(0,0,0,.15);color:var(--text);outline:none;transition:border-color .2s,box-shadow .2s}.contact-form input:focus,.contact-form textarea:focus{border-color:rgba(115,229,238,.48);box-shadow:0 0 0 3px rgba(115,229,238,.06)}.contact-form textarea{min-height:110px;resize:vertical}.contact-card{display:flex;flex-direction:column;justify-content:center;gap:12px}.contact-card h3{margin:0;font:800 23px Manrope,sans-serif}.contact-card p{margin:0;color:var(--muted);font-size:12px}.contact-links{display:grid;gap:9px;margin-top:4px}.contact-link{display:flex;justify-content:center;text-align:center;padding:11px;border:1px solid var(--line);border-radius:10px;font-size:11px;font-weight:700;overflow-wrap:anywhere;transition:transform .2s,border-color .2s}.contact-link:hover{transform:translateY(-2px);border-color:rgba(115,229,238,.4)}.contact-link.highlight{color:var(--mint);background:rgba(115,229,238,.05);border-color:rgba(115,229,238,.25)}footer{padding:32px 0 42px;color:var(--muted);font-size:10px}.foot{padding-top:17px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+    .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1)}.reveal.visible{opacity:1;transform:translateY(0)}
+    @media(hover:hover) and (prefers-reduced-motion:no-preference){.service:hover,.skill:hover,.exp:hover,.contact-panel:hover,.step:hover,.sheet:hover,.proof:hover{transform:translateY(-6px)}.float-chip:hover{transform:translateY(-5px) scale(1.03)}}
+    @media(max-width:980px){.links{display:none}.projects{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{grid-template-columns:1fr 1fr}.dashboard{width:min(350px,95%)}.hero-scene{min-height:390px}}
+    @media(max-width:720px){.wrap{width:min(var(--width),calc(100% - 24px))}.hero{grid-template-columns:1fr;padding-top:36px;gap:10px}.hero-copy{padding:25px 20px}.hero h1{font-size:clamp(40px,11vw,59px)}.hero-scene{min-height:350px}.dashboard{width:min(355px,89%);transform:rotateY(-6deg) rotateX(4deg)}.orb{width:250px;height:250px}.chip-one{right:0;top:5%}.chip-two{bottom:4%;left:0}.chip-three{right:0;bottom:4%}.stats{grid-template-columns:1fr}.projects,.services,.skills,.experience,.contact{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.nav{padding:10px}.brand{font-size:11px;letter-spacing:.12em}.nav-cta{padding:9px 11px;font-size:11px}.section-title h2{font-size:30px}.about{padding:21px 17px}.project{padding:18px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}.reveal{opacity:1;transform:none}}
+    @keyframes dashboardFloat{0%,100%{translate:0 0}50%{translate:0 -9px}}
+    @keyframes chipFloat{0%,100%{translate:0 0}50%{translate:0 -8px}}
+    @keyframes drawLine{to{stroke-dashoffset:0}}
   </style>
 </head>
 <body>
   <header class="top">
     <div class="wrap nav glass">
       <a class="brand" href="#home">DATASHEET STUDIO</a>
-      <nav class="links" aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#services">Services</a>
-        <a href="#process">Process</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <nav class="links" aria-label="Main navigation"><a href="#about">About</a><a href="#projects">Projects</a><a href="#services">Services</a><a href="#process">Process</a><a href="#contact">Contact</a></nav>
       <a class="nav-cta" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
     </div>
   </header>
 
   <main class="wrap" id="home">
     <section class="hero">
-      <div class="hero-main glass">
+      <div class="hero-copy glass">
         <span class="eyebrow">Data Analyst • Reporting & Automation</span>
         <h1>Smarter workflows.<br><span>Clearer decisions.</span></h1>
         <p>I help businesses turn messy data into simpler systems—covering payroll, stock tracking, MIS dashboards, and clean reporting workflows in Google Sheets, Excel, and Power BI.</p>
-        <div class="actions">
-          <a class="button primary" href="#projects">Explore my work <span aria-hidden="true">↓</span></a>
-          <a class="button secondary" href="https://drive.google.com/file/d/1ieUcVy7whfGPO9J-0Y86-1U38dGRyNSE/view?usp=sharing" target="_blank" rel="noopener noreferrer">View my CV ↗</a>
-        </div>
-        <div class="stats">
-          <div class="stat"><b>5+ yrs</b><span>Data and operations experience</span></div>
-          <div class="stat"><b>7 demos</b><span>Live spreadsheet systems</span></div>
-          <div class="stat"><b>Practical</b><span>Built for daily business use</span></div>
-        </div>
+        <div class="actions"><a class="button primary" href="#projects">Explore my work <span aria-hidden="true">↓</span></a><a class="button secondary" href="https://drive.google.com/file/d/1ieUcVy7whfGPO9J-0Y86-1U38dGRyNSE/view?usp=sharing" target="_blank" rel="noopener noreferrer">View my CV ↗</a></div>
+        <div class="stats"><div class="stat"><b>5+ yrs</b><span>Data and operations experience</span></div><div class="stat"><b>7 demos</b><span>Live spreadsheet systems</span></div><div class="stat"><b>Practical</b><span>Built for daily business use</span></div></div>
       </div>
 
-      <div class="showcase">
-        <div class="sheet glass">
-          <div class="sheet-head"><b>Inventory overview</b><span class="live">● Sample data</span></div>
-          <table>
-            <thead>
-              <tr><th>Item</th><th>Balance</th><th>Status</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>MS Sheet 2mm</td><td>420 Kg</td><td><span class="tag ok">In stock</span></td></tr>
-              <tr><td>Copper Wire</td><td>200 Mtr</td><td><span class="tag low">Low</span></td></tr>
-              <tr><td>Cutting Oil</td><td>0 Ltr</td><td><span class="tag out">Out</span></td></tr>
-            </tbody>
-          </table>
+      <div class="hero-scene" aria-label="Illustration of an interactive analytics dashboard">
+        <div class="scene-grid" aria-hidden="true"></div><div class="orb" aria-hidden="true"></div>
+        <div class="dashboard glass">
+          <div class="dash-head"><span class="dash-title">Operations overview</span><span class="dash-label">LIVE DEMO</span></div>
+          <div class="kpis"><div class="kpi"><small>Stock health</small><b>94%</b></div><div class="kpi"><small>Reports</small><b>07</b></div><div class="kpi"><small>Data quality</small><b>↑</b></div></div>
+          <div class="chart" aria-label="Decorative rising data chart"><svg viewBox="0 0 360 120" role="img" aria-hidden="true"><defs><linearGradient id="chartGradient" x1="0" x2="1"><stop offset="0" stop-color="#73e5ee"/><stop offset="1" stop-color="#9baaff"/></linearGradient><linearGradient id="areaGradient" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#73e5ee" stop-opacity=".32"/><stop offset="1" stop-color="#73e5ee" stop-opacity="0"/></linearGradient></defs><path class="chart-area" d="M0 95 C35 88 43 75 78 80 S125 55 158 65 S205 35 237 48 S290 18 320 29 S343 18 360 8 V120 H0 Z"/><path class="chart-line" d="M0 95 C35 88 43 75 78 80 S125 55 158 65 S205 35 237 48 S290 18 320 29 S343 18 360 8"/></svg></div>
+          <div class="dash-foot"><span>Cleaner data</span><span>Better decisions ↗</span></div>
         </div>
-        <div class="proof glass">
-          <div class="proof-icon" aria-hidden="true">↗</div>
-          <div><b>Built around your workflow</b><span>Practical tools, clear reporting, less manual work.</span></div>
-        </div>
+        <div class="float-chip chip-one"><b>Automated</b>Less repetitive work</div>
+        <div class="float-chip chip-two"><b>Google Sheets</b>Simple. Flexible. Useful.</div>
+        <div class="float-chip chip-three"><b><span>●</span> Decision ready</b>Clear reporting</div>
       </div>
     </section>
 
-    <section id="about">
-      <div class="section-title">
-        <span class="kicker">About</span>
-        <h2>Practical experience. Purpose-built systems.</h2>
-        <p>I turn repetitive work into dependable systems that people can trust and actually use every day.</p>
-      </div>
-      <div class="about glass">
-        <h3>Experience across logistics, manufacturing, and exports.</h3>
-        <p>I build useful reporting tools that reduce manual effort and create clarity—from stock tracking and payroll workflows to dashboard reporting and operational MIS. The focus is always on clean logic, clean data, and tools that fit the way teams already work.</p>
+    <section id="about" class="reveal">
+      <div class="section-title"><span class="kicker">About</span><h2>Practical experience. Purpose-built systems.</h2><p>I turn repetitive work into dependable systems that people can trust and actually use every day.</p></div>
+      <div class="about glass"><h3>Experience across logistics, manufacturing, and exports.</h3><p>I build useful reporting tools that reduce manual effort and create clarity—from stock tracking and payroll workflows to dashboard reporting and operational MIS. The focus is always on clean logic, clean data, and tools that fit the way teams already work.</p>
         <div class="experience">
-          <article class="exp">
-            <h3>Data Analyst</h3>
-            <small>Eastman Exports Inc. · Sep 2026 – Present</small>
-            <p>Designing Google Sheets and Power BI dashboards for management reporting and operational visibility.</p>
-          </article>
-          <article class="exp">
-            <h3>Data Analyst, Quality Control</h3>
-            <small>Youngman Woollen Mills Pvt. Ltd. · May 2025 – Aug 2026</small>
-            <p>Created recurring MIS dashboards and maintained reporting records for daily and monthly quality checks.</p>
-          </article>
-          <article class="exp">
-            <h3>Shipment Team Leader</h3>
-            <small>Men Rocks Pvt. Ltd. · Jun 2022 – Feb 2025</small>
-            <p>Managed inventory and outbound movement while improving speed, accuracy, and turnaround time.</p>
-          </article>
-          <article class="exp">
-            <h3>Dispatch Executive (Outbound)</h3>
-            <small>Nayra International · Aug 2021 – May 2022</small>
-            <p>Tracked dispatch records and delivery performance to support on-time customer service.</p>
-          </article>
+          <article class="exp"><h3>Data Analyst</h3><small>Eastman Exports Inc. · Sep 2026 – Present</small><p>Designing Google Sheets and Power BI dashboards for management reporting and operational visibility.</p></article>
+          <article class="exp"><h3>Data Analyst, Quality Control</h3><small>Youngman Woollen Mills Pvt. Ltd. · May 2025 – Aug 2026</small><p>Created recurring MIS dashboards and maintained reporting records for daily and monthly quality checks.</p></article>
+          <article class="exp"><h3>Shipment Team Leader</h3><small>Men Rocks Pvt. Ltd. · Jun 2022 – Feb 2025</small><p>Managed inventory and outbound movement while improving speed, accuracy, and turnaround time.</p></article>
+          <article class="exp"><h3>Dispatch Executive (Outbound)</h3><small>Nayra International · Aug 2021 – May 2022</small><p>Tracked dispatch records and delivery performance to support on-time customer service.</p></article>
         </div>
       </div>
     </section>
 
-    <section id="projects">
-      <div class="section-title">
-        <span class="kicker">Selected work</span>
-        <h2>Explore the live demos</h2>
-        <p>These examples use demo data. Open a sheet to explore the structure and workflow.</p>
-      </div>
-      <div class="filters" id="filters" role="group" aria-label="Filter projects"></div>
-      <div class="projects" id="projectsGrid"></div>
+    <section id="projects" class="reveal">
+      <div class="section-title"><span class="kicker">Selected work</span><h2>Explore the live demos</h2><p>These examples use demo data. Open a sheet to explore the structure and workflow.</p></div>
+      <div class="filters" id="filters" role="group" aria-label="Filter projects"></div><div class="projects" id="projectsGrid"></div>
     </section>
 
-    <section id="services">
-      <div class="section-title">
-        <span class="kicker">Services</span>
-        <h2>Built for everyday work.</h2>
-        <p>Start with the process you need to improve, and build from there.</p>
-      </div>
+    <section id="services" class="reveal">
+      <div class="section-title"><span class="kicker">Services</span><h2>Built for everyday work.</h2><p>Start with the process you need to improve, and build from there.</p></div>
       <div class="services">
         <article class="service glass"><div class="service-icon">₹</div><h3>HR & payroll</h3><p>Attendance, salary calculations, deductions, and monthly payslip automation.</p></article>
         <article class="service glass"><div class="service-icon">▦</div><h3>Inventory control</h3><p>Stock movement logs, closing balance tracking, and low-stock alert systems.</p></article>
@@ -153,60 +85,24 @@
         <article class="service glass"><div class="service-icon">⚙</div><h3>Automation</h3><p>Formulas, spreadsheet logic, and workflow improvements that reduce manual effort.</p></article>
         <article class="service glass"><div class="service-icon">◈</div><h3>Power BI</h3><p>Interactive reports that make trends and business metrics easier to understand.</p></article>
       </div>
-      <div class="skills" style="margin-top:15px;">
-        <div class="skill glass"><b>Google Sheets</b><span>Automation & reporting</span></div>
-        <div class="skill glass"><b>Excel</b><span>Logic & analysis</span></div>
-        <div class="skill glass"><b>Power BI</b><span>Dashboards & insights</span></div>
-      </div>
+      <div class="skills" style="margin-top:15px"><div class="skill glass"><b>Google Sheets</b><span>Automation & reporting</span></div><div class="skill glass"><b>Excel</b><span>Logic & analysis</span></div><div class="skill glass"><b>Power BI</b><span>Dashboards & insights</span></div></div>
     </section>
 
-    <section id="process">
-      <div class="section-title">
-        <span class="kicker">How it works</span>
-        <h2>A clear process from start to handover.</h2>
-      </div>
-      <div class="steps">
-        <div class="step"><b>01</b><h3>Discuss</h3><p>Share your problem and goals.</p></div>
-        <div class="step"><b>02</b><h3>Plan</h3><p>Agree on scope and pricing.</p></div>
-        <div class="step"><b>03</b><h3>Build</h3><p>Review the working version early.</p></div>
-        <div class="step"><b>04</b><h3>Refine</h3><p>Test and adjust together.</p></div>
-        <div class="step"><b>05</b><h3>Handover</h3><p>Get the final system and guide.</p></div>
-      </div>
+    <section id="process" class="reveal">
+      <div class="section-title"><span class="kicker">How it works</span><h2>A clear process from start to handover.</h2></div>
+      <div class="steps"><div class="step"><b>01</b><h3>Discuss</h3><p>Share your problem and goals.</p></div><div class="step"><b>02</b><h3>Plan</h3><p>Agree on scope and pricing.</p></div><div class="step"><b>03</b><h3>Build</h3><p>Review the working version early.</p></div><div class="step"><b>04</b><h3>Refine</h3><p>Test and adjust together.</p></div><div class="step"><b>05</b><h3>Handover</h3><p>Get the final system and guide.</p></div></div>
     </section>
 
-    <section id="contact">
-      <div class="section-title">
-        <span class="kicker">Get in touch</span>
-        <h2>Let’s make your reporting work better.</h2>
-        <p>Share what you are trying to improve and I’ll guide you on the best way forward.</p>
-      </div>
+    <section id="contact" class="reveal">
+      <div class="section-title"><span class="kicker">Get in touch</span><h2>Let’s make your reporting work better.</h2><p>Share what you are trying to improve and I’ll guide you on the best way forward.</p></div>
       <div class="contact">
-        <div class="contact-panel glass">
-          <form class="contact-form" id="contactForm">
-            <label>Your name<input id="name" name="name" autocomplete="name" required placeholder="Your name" /></label>
-            <label>Your email<input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" /></label>
-            <label>Project details<textarea id="message" name="message" required placeholder="Tell me what you need help with..."></textarea></label>
-            <button class="button primary" type="submit">Send project enquiry ↗</button>
-          </form>
-        </div>
-        <aside class="contact-panel contact-card glass">
-          <h3>Start a conversation.</h3>
-          <p>Reach out directly by email or WhatsApp. I can help you plan a system that fits how your business actually works.</p>
-          <div class="contact-links">
-            <a class="contact-link highlight" href="mailto:mujammilansari5516@gmail.com">mujammilansari5516@gmail.com</a>
-            <a class="contact-link" href="https://wa.me/918288959883?text=Hi%20Mujammil%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer">Message on WhatsApp ↗</a>
-          </div>
-        </aside>
+        <div class="contact-panel glass"><form class="contact-form" id="contactForm"><label>Your name<input id="name" name="name" autocomplete="name" required placeholder="Your name"></label><label>Your email<input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com"></label><label>Project details<textarea id="message" name="message" required placeholder="Tell me what you need help with..."></textarea></label><button class="button primary" type="submit">Send project enquiry ↗</button></form></div>
+        <aside class="contact-panel contact-card glass"><h3>Start a conversation.</h3><p>Reach out directly by email or WhatsApp. I can help plan a system that fits how your business works.</p><div class="contact-links"><a class="contact-link highlight" href="mailto:mujammilansari5516@gmail.com">mujammilansari5516@gmail.com</a><a class="contact-link" href="https://wa.me/918288959883?text=Hi%20Mujammil%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer">Message on WhatsApp ↗</a></div></aside>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="wrap foot">
-      <span>© 2026 Mujammil Ansari · DataSheet Studio</span>
-      <span>Ludhiana, India · Working with clients worldwide</span>
-    </div>
-  </footer>
+  <footer><div class="wrap foot"><span>© 2026 Mujammil Ansari · DataSheet Studio</span><span>Ludhiana, India · Working with clients worldwide</span></div></footer>
 
   <script>
     const sheetBase = 'https://docs.google.com/spreadsheets/d/';
@@ -219,57 +115,39 @@
       {category:'Dashboards',title:'Production Daily Output Tracker',description:'Turn daily production entries into a clear view of output over time.',features:['Quick daily-entry layout','Automatic totals','Output trends'],tools:['Google Sheets','Formulas'],id:'1-6ulPtQ0iQEILhzOLD2sy2qDI-L7QSVPC9_zQfVBqdM'},
       {category:'Data Cleaning',title:'Data Cleaning: Before and After',description:'Compare a messy source file with a cleaned, analysis-ready version.',features:['Remove blank rows and duplicates','Standardize dates and values','Prepare data for analysis'],tools:['Google Sheets','Excel'],id:'1HdfNWC-rVsEEQP4z77RQUAd20k_vHm2X1JrysnDd4zU'}
     ];
-
-    const filtersEl = document.getElementById('filters');
-    const projectsGrid = document.getElementById('projectsGrid');
-    let selectedCategory = 'All';
+    const filters = document.getElementById('filters');
+    const grid = document.getElementById('projectsGrid');
+    let selected = 'All';
     const categories = ['All', ...new Set(projects.map(project => project.category))];
-
-    function escapeHTML(value) {
-      return String(value).replace(/[&<>"']/g, char => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[char]));
+    function escapeHTML(value){return String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));}
+    function renderProjects(){
+      filters.innerHTML=categories.map(category=>`<button class="filter" type="button" aria-pressed="${category===selected}" data-category="${escapeHTML(category)}">${escapeHTML(category)}</button>`).join('');
+      const visible=projects.filter(project=>selected==='All'||project.category===selected);
+      grid.innerHTML=visible.map(project=>`<article class="project glass tilt-card"><span class="category">${escapeHTML(project.category)}</span><h3>${escapeHTML(project.title)}</h3><p>${escapeHTML(project.description)}</p><ul>${project.features.map(feature=>`<li>${escapeHTML(feature)}</li>`).join('')}</ul><div class="tools">${project.tools.map(tool=>`<span>${escapeHTML(tool)}</span>`).join('')}</div><a class="open" href="${sheetBase}${project.id}/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Open demo sheet ↗</a></article>`).join('');
+      if(selected==='All')grid.insertAdjacentHTML('beforeend','<article class="project glass soon"><span class="category">Coming soon</span><h3>Power BI report</h3><p>An interactive report with filters and a clean data model.</p></article>');
     }
-
-    function renderProjects() {
-      filtersEl.innerHTML = categories.map(category => `<button class="filter" type="button" aria-pressed="${category === selectedCategory}" data-category="${escapeHTML(category)}">${escapeHTML(category)}</button>`).join('');
-      const visible = projects.filter(project => selectedCategory === 'All' || project.category === selectedCategory);
-      projectsGrid.innerHTML = visible.map(project => `
-        <article class="project glass">
-          <span class="category">${escapeHTML(project.category)}</span>
-          <h3>${escapeHTML(project.title)}</h3>
-          <p>${escapeHTML(project.description)}</p>
-          <ul>${project.features.map(feature => `<li>${escapeHTML(feature)}</li>`).join('')}</ul>
-          <div class="tools">${project.tools.map(tool => `<span>${escapeHTML(tool)}</span>`).join('')}</div>
-          <a class="open" href="${sheetBase}${project.id}/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Open demo sheet ↗</a>
-        </article>
-      `).join('');
-
-      if (selectedCategory === 'All') {
-        projectsGrid.insertAdjacentHTML('beforeend', `
-          <article class="project glass soon">
-            <span class="category">Coming soon</span>
-            <h3>Power BI report</h3>
-            <p>An interactive report with filters and a clean data model.</p>
-          </article>
-        `);
-      }
-    }
-
-    filtersEl.addEventListener('click', event => {
-      const button = event.target.closest('button[data-category]');
-      if (!button) return;
-      selectedCategory = button.dataset.category;
-      renderProjects();
-    });
-
+    filters.addEventListener('click',event=>{const button=event.target.closest('button[data-category]');if(!button)return;selected=button.dataset.category;renderProjects();});
     renderProjects();
 
-    document.getElementById('contactForm').addEventListener('submit', event => {
+    if(window.matchMedia('(hover: hover) and (pointer: fine)').matches && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+      document.addEventListener('pointermove',event=>{document.body.style.setProperty('--mx',`${event.clientX}px`);document.body.style.setProperty('--my',`${event.clientY}px`);},{passive:true});
+      grid.addEventListener('pointermove',event=>{const card=event.target.closest('.tilt-card');if(!card)return;const rect=card.getBoundingClientRect();const x=(event.clientX-rect.left)/rect.width-.5;const y=(event.clientY-rect.top)/rect.height-.5;card.style.setProperty('--tilt-y',`${x*5}deg`);card.style.setProperty('--tilt-x',`${-y*5}deg`);});
+      grid.addEventListener('pointerleave',event=>{const card=event.target.closest('.tilt-card');if(card){card.style.setProperty('--tilt-x','0deg');card.style.setProperty('--tilt-y','0deg');}},true);
+    }
+
+    const revealItems=document.querySelectorAll('.reveal');
+    if('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+      const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);}}),{threshold:.12});
+      revealItems.forEach(item=>observer.observe(item));
+    }else{revealItems.forEach(item=>item.classList.add('visible'));}
+
+    document.getElementById('contactForm').addEventListener('submit',event=>{
       event.preventDefault();
-      const name = document.getElementById('name').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const message = document.getElementById('message').value.trim();
-      const body = `Name: ${name}\nEmail: ${email}\n\nProject details:\n${message}`;
-      window.location.href = `mailto:mujammilansari5516@gmail.com?subject=${encodeURIComponent(`Portfolio enquiry from ${name}`)}&body=${encodeURIComponent(body)}`;
+      const name=document.getElementById('name').value.trim();
+      const email=document.getElementById('email').value.trim();
+      const message=document.getElementById('message').value.trim();
+      const body=`Name: ${name}\nEmail: ${email}\n\nProject details:\n${message}`;
+      window.location.href=`mailto:mujammilansari5516@gmail.com?subject=${encodeURIComponent(`Portfolio enquiry from ${name}`)}&body=${encodeURIComponent(body)}`;
     });
   </script>
 </body>
