@@ -14,14 +14,14 @@
     *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:95px}body{margin:0;min-height:100vh;overflow-x:hidden;background:radial-gradient(ellipse at 50% 20%,rgba(83,198,205,.12),transparent 32%),radial-gradient(ellipse at 88% 18%,rgba(161,139,255,.12),transparent 32%),linear-gradient(180deg,#070b12,#0b111a 40%,#070b12);color:var(--text);font:16px/1.7 'DM Sans',sans-serif}body:before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.12;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:64px 64px;mask-image:linear-gradient(to bottom,black,transparent 75%)}a{text-decoration:none;color:inherit}img{max-width:100%;display:block}.wrap{width:min(var(--max),calc(100% - 36px));margin-inline:auto;position:relative;z-index:1}.panel{background:linear-gradient(180deg,rgba(16,25,37,.88),rgba(10,15,22,.92));border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);backdrop-filter:blur(16px)}
     .top{position:sticky;top:10px;z-index:20;padding-top:12px}.nav{height:60px;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:0 14px 0 20px;background:rgba(7,12,20,.84)}.brand{font:800 18px/1.2 Manrope,sans-serif;letter-spacing:.16em;white-space:nowrap}.brand em{font-style:normal;color:var(--cyan);font-weight:800}.links{display:flex;align-items:center;gap:25px;color:var(--muted);font-size:12px}.links a:hover{color:var(--cyan)}.nav-cta,.button,.contact-link{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:11px 16px;border:1px solid transparent;border-radius:10px;font:800 12px/1 Manrope,sans-serif;letter-spacing:.02em;transition:transform .24s,box-shadow .24s,border-color .24s}.nav-cta,.button.primary{color:#081312;background:linear-gradient(120deg,#a8fff0,#7adbd7);box-shadow:0 8px 22px rgba(103,206,197,.28)}.button.secondary{color:var(--text);background:rgba(255,255,255,.02);border-color:var(--line)}.nav-cta:hover,.button:hover,.contact-link:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(103,206,197,.18)}
     .hero{min-height:650px;display:grid;grid-template-columns:1.04fr .96fr;gap:28px;align-items:center;padding:56px 0 36px}.hero-copy{padding:40px 38px;position:relative;overflow:hidden}.hero-copy:after{content:"";position:absolute;inset:auto -150px -150px auto;width:330px;height:330px;border:1px solid rgba(131,233,220,.2);border-radius:50%;background:radial-gradient(circle,rgba(131,233,220,.08),transparent 68%);pointer-events:none}.eyebrow,.kicker{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border:1px solid rgba(131,233,220,.25);border-radius:999px;background:rgba(131,233,220,.05);color:var(--cyan);font-size:9px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}.live-dot{width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:0 0 12px var(--green)}.hero h1{position:relative;z-index:1;margin:22px 0 14px;font:800 clamp(42px,5vw,72px)/.96 Manrope,sans-serif;letter-spacing:-.07em}.hero h1 span{display:block;background:linear-gradient(120deg,#edf6ff,#9ad4ff 30%,#83e9dc 72%,#d9c8ff);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{max-width:57ch;color:var(--muted);font-size:15px;margin:0 0 22px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:26px;max-width:540px}.stat{padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.02)}.stat b{display:block;color:var(--text);font:800 18px/1.2 Manrope,sans-serif}.stat span{display:block;color:var(--muted);font-size:9px;letter-spacing:.04em;text-transform:uppercase}
-    .hero-scene{position:relative;display:grid;grid-template-columns:minmax(110px,.8fr) minmax(0,2fr);align-items:center;gap:16px;min-height:385px;padding:28px 0;isolation:isolate}.grid-plane{position:absolute;inset:5% -5% 10% 8%;z-index:-2;opacity:.22;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:28px 28px;border:1px solid rgba(255,255,255,.06);border-radius:24px;transform:perspective(600px) rotateX(55deg) rotateZ(-18deg) scale(1.08)}.ring{position:absolute;left:55%;top:50%;width:280px;height:280px;border:1px solid rgba(131,233,220,.24);border-radius:50%;transform:translate(-50%,-50%) rotateX(65deg) rotateY(-20deg);box-shadow:inset 0 0 20px rgba(131,233,220,.08);animation:ringTurn 24s linear infinite}.portrait-card{position:relative;z-index:2;align-self:center;width:100%;max-width:158px;padding:7px;background:linear-gradient(180deg,rgba(19,27,38,.7),rgba(12,18,28,.95));border:1px solid rgba(160,190,224,.2);border-radius:18px;box-shadow:0 15px 34px rgba(0,0,0,.34)}.portrait-card img{width:100%;height:auto;object-fit:cover;border-radius:13px}.portrait-label{position:absolute;left:10px;right:10px;bottom:10px;padding:6px 5px;text-align:center;border-radius:8px;background:rgba(7,12,20,.8);border:1px solid rgba(160,190,224,.12);color:var(--cyan);font-size:8px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.dashboard{position:relative;z-index:2;min-width:0;width:94%;padding:17px;border-radius:18px;border:1px solid var(--line);background:linear-gradient(180deg,rgba(17,23,34,.82),rgba(9,13,21,.94));box-shadow:0 12px 38px rgba(0,0,0,.34);transform:perspective(1000px) rotateY(-5deg) rotateX(2deg)}.dash-head,.dash-foot{display:flex;align-items:center;justify-content:space-between;gap:8px}.dash-title{font:700 11px Manrope,sans-serif}.dash-label{color:var(--cyan);font-size:7px;letter-spacing:.1em;white-space:nowrap}.kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-top:12px}.kpi{padding:8px 7px;border:1px solid var(--line);border-radius:9px;background:rgba(255,255,255,.02);min-width:0}.kpi small{display:block;color:var(--muted);font-size:7px;line-height:1.5}.kpi b{display:block;color:var(--text);font:800 15px/1.2 Manrope,sans-serif}.chart{position:relative;height:112px;margin:11px 0;padding:8px;border:1px solid var(--line);border-radius:10px;background:linear-gradient(180deg,rgba(20,28,37,.64),rgba(255,255,255,.01));overflow:hidden}.chart:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(to bottom,transparent 0 25%,rgba(255,255,255,.04) 25% 26%);}.chart svg{position:relative;z-index:1;width:100%;height:100%}.chart-line{fill:none;stroke:var(--cyan);stroke-width:3;stroke-linecap:round;stroke-linejoin:round;animation:draw 2.4s .35s ease-in forwards}.chart-area{fill:rgba(131,233,220,.12)}.dash-foot{margin-top:8px;color:var(--muted);font-size:7px}.float-chip{position:absolute;z-index:3;padding:8px 10px;border:1px solid rgba(160,190,224,.18);border-radius:10px;background:rgba(8,14,20,.9);box-shadow:0 8px 20px rgba(0,0,0,.2);backdrop-filter:blur(12px);color:var(--text);font-size:8px;line-height:1.4}.float-chip b{display:block;color:var(--cyan);font-size:9px;margin-bottom:2px}.chip-one{top:2%;right:4%}.chip-two{bottom:2%;left:23%}.chip-three{right:2%;bottom:12%}.section-title{text-align:center;max-width:720px;margin:0 auto 26px}.section-title .kicker{margin-bottom:8px}.section-title h2{font:800 clamp(28px,4vw,41px)/1.2 Manrope,sans-serif;letter-spacing:-.05em;margin:12px 0 8px}.section-title p{margin:0;color:var(--muted)}
-    .about{padding:27px 0 0}.about-panel{padding:26px}.about-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:18px;align-items:start}.about-copy h3{font:700 20px/1.3 Manrope,sans-serif;margin:0 0 8px}.about-copy p{margin:0;color:var(--muted)}.experience{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:16px}.exp{padding:17px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.02)}.exp h3{font:700 16px/1.3 Manrope,sans-serif;margin:0 0 4px}.exp small{display:block;color:var(--cyan);font-size:10px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px}.exp p{margin:0;color:var(--muted);font-size:11px;line-height:1.6}
+    .hero-scene{position:relative;display:grid;grid-template-columns:minmax(110px,.8fr) minmax(0,2fr);align-items:center;gap:16px;min-height:385px;padding:28px 0;isolation:isolate}.grid-plane{position:absolute;inset:5% -5% 10% 8%;z-index:-2;opacity:.22;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:28px 28px;border:1px solid rgba(255,255,255,.06);border-radius:24px;transform:perspective(600px) rotateX(55deg) rotateZ(-18deg) scale(1.08)}.ring{position:absolute;left:55%;top:50%;width:280px;height:280px;border:1px solid rgba(131,233,220,.24);border-radius:50%;transform:translate(-50%,-50%) rotateX(65deg) rotateY(-20deg);box-shadow:inset 0 0 20px rgba(131,233,220,.08);animation:ringTurn 24s linear infinite}.portrait-card{position:relative;z-index:2;align-self:center;width:100%;max-width:158px;padding:7px;background:linear-gradient(180deg,rgba(19,27,38,.7),rgba(12,18,28,.95));border:1px solid rgba(160,190,224,.2);border-radius:18px;box-shadow:0 15px 34px rgba(0,0,0,.34)}.portrait-card img{width:100%;height:auto;object-fit:cover;border-radius:13px}.portrait-label{position:absolute;left:10px;right:10px;bottom:10px;padding:6px 5px;text-align:center;border-radius:8px;background:rgba(7,12,20,.8);border:1px solid rgba(160,190,224,.12);color:var(--cyan);font-size:8px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.dashboard{position:relative;z-index:2;min-width:0;width:94%;padding:17px;border-radius:18px;border:1px solid var(--line);background:linear-gradient(180deg,rgba(17,23,34,.82),rgba(9,13,21,.94));box-shadow:0 12px 38px rgba(0,0,0,.34);transform:perspective(1000px) rotateY(-5deg) rotateX(2deg)}.dash-head,.dash-foot{display:flex;align-items:center;justify-content:space-between;gap:8px}.dash-title{font:700 11px Manrope,sans-serif}.dash-label{color:var(--cyan);font-size:7px;letter-spacing:.1em;white-space:nowrap}.kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-top:12px}.kpi{padding:8px 7px;border:1px solid var(--line);border-radius:9px;background:rgba(255,255,255,.02);min-width:0}.kpi small{display:block;color:var(--muted);font-size:7px;line-height:1.5}.kpi b{display:block;color:var(--text);font:800 15px/1.2 Manrope,sans-serif}.chart{position:relative;height:112px;margin:11px 0;padding:8px;border:1px solid var(--line);border-radius:10px;background:linear-gradient(180deg,rgba(20,28,37,.64),rgba(255,255,255,.01));overflow:hidden}.chart:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(to bottom,transparent 0 25%,rgba(255,255,255,.04) 25% 26%);}.chart svg{position:relative;z-index:1;width:100%;height:100%}.chart-line{fill:none;stroke:var(--cyan);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.chart-area{fill:rgba(131,233,220,.12)}.dash-foot{margin-top:8px;color:var(--muted);font-size:7px}.float-chip{position:absolute;z-index:3;padding:8px 10px;border:1px solid rgba(160,190,224,.18);border-radius:10px;background:rgba(8,14,20,.9);box-shadow:0 8px 20px rgba(0,0,0,.2);backdrop-filter:blur(12px);color:var(--text);font-size:8px;line-height:1.4}.float-chip b{display:block;color:var(--cyan);font-size:9px;margin-bottom:2px}.chip-one{top:2%;right:4%}.chip-two{bottom:2%;left:23%}.chip-three{right:2%;bottom:12%}.section-title{text-align:center;max-width:720px;margin:0 auto 26px}.section-title .kicker{margin-bottom:8px}.section-title h2{font:800 clamp(28px,4vw,41px)/1.2 Manrope,sans-serif;letter-spacing:-.05em;margin:12px 0 8px}.section-title p{margin:0;color:var(--muted)}
+    section{padding-bottom:40px}.about{padding:27px 0 40px}.about-panel{padding:26px}.about-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:18px;align-items:start}.about-copy h3{font:700 20px/1.3 Manrope,sans-serif;margin:0 0 8px}.about-copy p{margin:0;color:var(--muted)}.experience{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:16px}.exp{padding:17px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.02)}.exp h3{font:700 16px/1.3 Manrope,sans-serif;margin:0 0 4px}.exp small{display:block;color:var(--cyan);font-size:10px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px}.exp p{margin:0;color:var(--muted);font-size:11px;line-height:1.6}
     .filters{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin:20px 0 18px}.filter{padding:8px 13px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.02);color:var(--muted);font-size:11px;cursor:pointer;transition:all .24s}.filter[aria-pressed="true"]{color:var(--cyan);border-color:rgba(131,233,220,.35);background:rgba(131,233,220,.06)}
-    .projects,.services,.skills,.steps,.contact{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.project,.service,.skill,.step,.contact-panel{padding:17px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.02);transition:transform .28s,border-color .28s,box-shadow .28s}.project:hover,.service:hover,.skill:hover,.step:hover,.contact-panel:hover{transform:translateY(-4px);border-color:rgba(131,233,220,.25);box-shadow:0 18px 40px rgba(0,0,0,.18)}.category{display:inline-block;color:var(--cyan);font-size:9px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px}.project h3{font:700 16px/1.35 Manrope,sans-serif;margin:0 0 8px}.project p{margin:0;color:var(--muted);font-size:11px;line-height:1.7}.project ul{padding-left:18px;margin:12px 0 0;color:var(--muted);font-size:11px}.tools{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}.tools span{padding:3px 8px;border-radius:99px;border:1px solid rgba(160,190,224,.12);background:rgba(255,255,255,.02);color:var(--muted);font-size:9px}.open{display:block;margin-top:12px;color:var(--cyan);font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.services{grid-template-columns:repeat(3,minmax(0,1fr));}.service-icon{display:grid;place-items:center;width:38px;height:38px;border:1px solid rgba(131,233,220,.2);border-radius:12px;color:var(--cyan);font-size:18px;background:rgba(131,233,220,.04)}.service h3{font:700 14px/1.3 Manrope,sans-serif;margin:12px 0 5px}.service p{margin:0;color:var(--muted);font-size:11px}.skills{grid-template-columns:repeat(2,minmax(0,1fr));}.skill{display:block}.skill b{display:block;color:var(--cyan);font-size:12px;margin-bottom:6px}.skill span{color:var(--muted);font-size:11px}.step{display:grid;place-items:center;text-align:center}.step b{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(131,233,220,.2);color:var(--cyan);font:800 12px Manrope,sans-serif;margin:0 auto 10px}.step h3{font:700 14px/1.3 Manrope,sans-serif;margin:0 0 5px}.step p{margin:0;color:var(--muted);font-size:11px}.contact{grid-template-columns:1.12fr .88fr;gap:14px;align-items:start}.contact-panel{padding:21px}.contact-form{display:grid;gap:12px}.contact-form label{display:grid;gap:5px;color:var(--muted);font-size:11px}.contact-form input,.contact-form textarea{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:rgba(0,0,0,.16);color:var(--text);font:inherit}.contact-form input:focus,.contact-form textarea:focus{outline:none;border-color:rgba(131,233,220,.45)}.contact-links{display:grid;gap:8px;margin-top:12px}.contact-link{display:block;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:rgba(255,255,255,.02);text-align:center;color:var(--text);font-size:11px}.contact-link.highlight{color:var(--cy an);border-color:rgba(131,233,220,.25)}.foot{padding:30px 0 40px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:11px;border-top:1px solid var(--line);margin-top:32px}.reveal{opacity:0;transform:translateY(20px);transition:opacity .65s ease,transform .65s cubic-bezier(.2,.8,.2,1)}.reveal.visible{opacity:1;transform:translateY(0)}
-    @media (max-width:980px){.hero{grid-template-columns:1fr 1fr;gap:16px}.hero-copy{padding:32px 26px}.hero-scene{grid-template-columns:minmax(82px,.7fr) minmax(0,2fr);gap:12px}.dashboard{width:96%}.projects,.services,.contact,.about-grid,.experience{grid-template-columns:1fr 1fr}.}
+    .projects,.services,.skills,.steps,.contact{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.project,.service,.skill,.step,.contact-panel{padding:17px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.02);transition:transform .28s,border-color .28s,box-shadow .28s}.project:hover,.service:hover,.skill:hover,.step:hover,.contact-panel:hover{transform:translateY(-4px);border-color:rgba(131,233,220,.25);box-shadow:0 18px 40px rgba(0,0,0,.18)}.category{display:inline-block;color:var(--cyan);font-size:9px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px}.project h3{font:700 16px/1.35 Manrope,sans-serif;margin:0 0 8px}.project p{margin:0;color:var(--muted);font-size:11px;line-height:1.7}.project ul{padding-left:18px;margin:12px 0 0;color:var(--muted);font-size:11px}.tools{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}.tools span{padding:3px 8px;border-radius:99px;border:1px solid rgba(160,190,224,.12);background:rgba(255,255,255,.02);color:var(--muted);font-size:9px}.open{display:block;margin-top:12px;color:var(--cyan);font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.open.soon{color:var(--muted);opacity:.7}.services{grid-template-columns:repeat(3,minmax(0,1fr));}.service-icon{display:grid;place-items:center;width:38px;height:38px;border:1px solid rgba(131,233,220,.2);border-radius:12px;color:var(--cyan);font-size:18px;background:rgba(131,233,220,.04)}.service h3{font:700 14px/1.3 Manrope,sans-serif;margin:12px 0 5px}.service p{margin:0;color:var(--muted);font-size:11px}.skills{grid-template-columns:repeat(2,minmax(0,1fr));}.skill{display:block}.skill b{display:block;color:var(--cyan);font-size:12px;margin-bottom:6px}.skill span{color:var(--muted);font-size:11px}.step{display:grid;place-items:center;text-align:center}.step b{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(131,233,220,.2);color:var(--cyan);font:800 12px Manrope,sans-serif;margin:0 auto 10px}.step h3{font:700 14px/1.3 Manrope,sans-serif;margin:0 0 5px}.step p{margin:0;color:var(--muted);font-size:11px}.contact{grid-template-columns:1.12fr .88fr;gap:14px;align-items:start}.contact-panel{padding:21px}.contact-form{display:grid;gap:12px}.contact-form label{display:grid;gap:5px;color:var(--muted);font-size:11px}.contact-form input,.contact-form textarea{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:rgba(0,0,0,.16);color:var(--text);font:inherit}.contact-form input:focus,.contact-form textarea:focus{outline:none;border-color:rgba(131,233,220,.45)}.contact-links{display:grid;gap:8px;margin-top:12px}.contact-link{display:block;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:rgba(255,255,255,.02);text-align:center;color:var(--text);font-size:11px}.contact-link.highlight{color:var(--cyan);border-color:rgba(131,233,220,.25)}.foot{padding:30px 0 40px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:11px;border-top:1px solid var(--line);margin-top:32px}.reveal{opacity:0;transform:translateY(20px);transition:opacity .65s ease,transform .65s cubic-bezier(.2,.8,.2,1)}.reveal.visible{opacity:1;transform:translateY(0)}
+    @media (max-width:980px){.hero{grid-template-columns:1fr 1fr;gap:16px}.hero-copy{padding:32px 26px}.hero-scene{grid-template-columns:minmax(82px,.7fr) minmax(0,2fr);gap:12px}.dashboard{width:96%}.projects,.services,.contact,.about-grid,.experience{grid-template-columns:1fr 1fr}}
     @media (max-width:720px){.wrap{width:min(var(--max),calc(100% - 24px))}.links{display:none}.hero{grid-template-columns:1fr;padding-top:36px;gap:0}.hero-copy{padding:25px 20px}.hero h1{font-size:clamp(40px,11vw,59px)}.hero-scene{grid-template-columns:minmax(0,1fr);min-height:320px;padding:20px 0}.grid-plane{inset:5% 5% 16%}.ring{left:50%;top:50%;width:220px;height:220px}.portrait-card{max-width:120px}.dashboard{width:100%;padding:12px}.stats,.projects,.services,.skills,.experience,.contact,.steps{grid-template-columns:1fr}.about-grid{grid-template-columns:1fr}.nav-cta{display:none}.foot{display:grid;text-align:center}}
     @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
-    @keyframes ringTurn{to{rotate:360deg}}@keyframes draw{to{stroke-dashoffset:0}}
+    @keyframes ringTurn{to{rotate:360deg}}
   </style>
 </head>
 <body>
@@ -47,12 +47,13 @@
         <p>I’m Mujammil Ansari. I design practical reporting systems, payroll tools, inventory trackers, and dashboard workflows that help teams spend less time managing spreadsheets and more time making decisions.</p>
         <div class="actions">
           <a class="button primary" href="#projects">Explore the work <span aria-hidden="true">→</span></a>
+          <!-- RESUME LINK: open it once in a new tab to confirm it works -->
           <a class="button secondary" href="https://drive.google.com/file/d/1ieUcVy7whfGPO9J-0Y86-1U38dGRyNSE/view?usp=sharing" target="_blank" rel="noopener noreferrer">View résumé <span aria-hidden="true">↗</span></a>
         </div>
         <div class="stats">
           <div class="stat"><b>5+ years</b><span>Data & operations experience</span></div>
           <div class="stat"><b>7 demos</b><span>Live spreadsheet systems</span></div>
-          <div class="stat"><b>end-to-end</b><span>From brief to handover</span></div>
+          <div class="stat"><b>End-to-end</b><span>From brief to handover</span></div>
         </div>
       </div>
 
@@ -76,16 +77,6 @@
           </div>
           <div class="chart">
             <svg viewBox="0 0 360 120" role="img" aria-label="Illustrative upward data trend">
-              <defs>
-                <linearGradient id="line" x1="0" x2="1">
-                  <stop offset="0" stop-color="#73e5ee"/>
-                  <stop offset="1" stop-color="#a18bff"/>
-                </linearGradient>
-                <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0" stop-color="#73e5ee" stop-opacity=".32"/>
-                  <stop offset="1" stop-color="#73e5ee" stop-opacity="0"/>
-                </linearGradient>
-              </defs>
               <path class="chart-area" d="M0 94 C35 88 43 75 78 80 S125 55 158 65 S205 35 237 48 S290 18 320 29 S343 18 360 8 V120 H0 Z"/>
               <path class="chart-line" d="M0 94 C35 88 43 75 78 80 S125 55 158 65 S205 35 237 48 S290 18 320 29 S343 18 360 8"/>
             </svg>
@@ -115,7 +106,7 @@
         <div class="experience">
           <article class="exp">
             <h3>Data Analyst</h3>
-            <small>Eastman Export Inc. · Sep 2026 — Present</small>
+            <small>Eastman Exports Inc. · Sep 2026 — Present</small>
             <p>Designing Google Sheets and Power BI dashboards for management reporting and operational visibility.</p>
           </article>
 
@@ -133,7 +124,7 @@
 
           <article class="exp">
             <h3>Dispatch Executive (Outbound)</h3>
-            <small>Narayana International · Aug 2021 — May 2022</small>
+            <small>Nayra International · Aug 2021 — May 2022</small>
             <p>Tracked dispatch records and delivery performance to support on-time customer service.</p>
           </article>
         </div>
@@ -158,7 +149,7 @@
       </div>
       <div class="services">
         <article class="service panel">
-          <div class="service-icon">📦</div>
+          <div class="service-icon">₹</div>
           <h3>HR & payroll</h3>
           <p>Attendance, salary calculations, deductions, and monthly payslip automation.</p>
         </article>
@@ -254,16 +245,43 @@
   </footer>
 
   <script>
-    const sheetBase='https://docs.google.com/spreadsheets/d/';
+    /*
+      PROJECT LINKS
+      Har project ka `url` apni Google Sheet se seedha copy-paste karo
+      (Excel/Drive mein link cell copy -> yahan paste). Poora link ya sirf /d/ID/ wala hissa,
+      dono chalenge. Spaces apne aap hat jaate hain.
+    */
     const projects=[
-      {category:'HR & Payroll',title:'Payroll with Biometric Attendance',description:'Import attendance data and calculate monthly salary, deductions, and payslips.',features:['Monthly history tabs','Attendance and leave rules','Employee deduction settings','Printable payslips'],tools:['Google Sheets','Formulas'],id:'12x1X4JVDgUb9wWqyYHkuWfWQB_3B1Ar-bbxy-1aqr8'},
-      {category:'HR & Payroll',title:'Payroll with Manual Attendance',description:'A payroll workflow for teams that record attendance manually.',features:['Monthly attendance entry','Employee master','Month summary dashboard','Payslip-ready output'],tools:['Google Sheets','Dashboard'],id:'1p1tnVt5BmgdC5RK9pjFl4ENrHcW1RNh5uI5VK0dCCek'},
-      {category:'Inventory',title:'Stock Inward and Outward',description:'Track stock movement and see closing balances and status at a glance.',features:['Item-code dropdowns','Automatic names and units','Negative-stock checks','Hindi guide'],tools:['Google Sheets','Data validation'],id:'1jMcquNgTmm-UfgcBi_Ut49erGKteX_JHj0fdzUvbblA'},
-      {category:'Inventory',title:'Inventory Stock Tracker',description:'A straightforward stock tracker for small stores and workshops.',features:['Running item balance','Low-stock flags','Simple daily-entry layout'],tools:['Google Sheets','Conditional formatting'],id:'10y-E63fTx7PsHC3kvj2nXujXH4JZb3HwPvvR0M4FxcU'},
-      {category:'Dashboards',title:'Sales Performance Dashboard',description:'Review revenue, products, and sales trends in one place.',features:['KPI summary','Trend charts','Top performer analysis'],tools:['Google Sheets','Charts'],id:'1SdU93D1GjMHDTpZICOu_0FPuv79IQmWewu0uG11oKQ'},
-      {category:'Dashboards',title:'Production Daily Output Tracker',description:'Turn daily production entries into a clear view of output over time.',features:['Quick daily-entry layout','Automatic totals','Output trends'],tools:['Google Sheets','Formulas'],id:'1-6ulPtQ0iQELhzOLD2sy2qDI-L7QSPCz_zQfVbQdM'},
-      {category:'Data Cleaning',title:'Data Cleaning: Before and After',description:'Compare a messy source file with a cleaned, analysis-ready version.',features:['Remove blank rows and duplicates','Standardize dates and values','Prepare data for analysis'],tools:['Google Sheets','Excel'],id:'1HdfNWC-rVsEUQP4z77RQUaD20k_vHm2X1JrysnDd4zU'}
+      {category:'HR & Payroll',title:'Payroll with Biometric Attendance',description:'Import attendance data and calculate monthly salary, deductions, and payslips.',features:['Monthly history tabs','Attendance and leave rules','Employee deduction settings','Printable payslips'],tools:['Google Sheets','Formulas'],
+        url:'https://docs.google.com/spreadsheets/d/132x1X4JVDgUb9wWqyYHkuWfWQB_3B1Ar-bbxy-1aqr8/edit?usp=sharing'},
+      {category:'HR & Payroll',title:'Payroll with Manual Attendance',description:'A payroll workflow for teams that record attendance manually.',features:['Monthly attendance entry','Employee master','Month summary dashboard','Payslip-ready output'],tools:['Google Sheets','Dashboard'],
+        url:'https://docs.google.com/spreadsheets/d/1p1tnVt5BmgdC5RK9pjFl4ENrHcX1RnH5uI5VK0dCCek/edit?usp=drive_link'},
+      {category:'Inventory',title:'Stock Inward and Outward',description:'Track stock movement and see closing balances and status at a glance.',features:['Item-code dropdowns','Automatic names and units','Negative-stock checks','Hindi guide'],tools:['Google Sheets','Data validation'],
+        url:'https://docs.google.com/spreadsheets/d/1jMcquNgTmm-UfgcBi_Ut49erGKteX_JHj0fdzUvbblA/edit?usp=drive_link'},
+      {category:'Inventory',title:'Inventory Stock Tracker',description:'A straightforward stock tracker for small stores and workshops.',features:['Running item balance','Low-stock flags','Simple daily-entry layout'],tools:['Google Sheets','Conditional formatting'],
+        url:'https://docs.google.com/spreadsheets/d/10y-E63fTx7PsHC3kvj2nXujXH4JZb3HwPvvR0M4FxcU/edit?usp=drive_link'},
+      {category:'Dashboards',title:'Sales Performance Dashboard',description:'Review revenue, products, and sales trends in one place.',features:['KPI summary','Trend charts','Top performer analysis'],tools:['Google Sheets','Charts'],
+        url:'https://docs.google.com/spreadsheets/d/1SdU93D1GjMHDTpZICOuw_0FPuv79IQmWeqw0uG11oKQ/edit?usp=drive_link'},
+      {category:'Dashboards',title:'Production Daily Output Tracker',description:'Turn daily production entries into a clear view of output over time.',features:['Quick daily-entry layout','Automatic totals','Output trends'],tools:['Google Sheets','Formulas'],
+        url:'https://docs.google.com/spreadsheets/d/1-6ulPtQ0iQELhzOLD2sy2qDI-L7QSVPC9_zQfVbQdM/edit?usp=drive_link'},
+      {category:'Data Cleaning',title:'Data Cleaning: Before and After',description:'Compare a messy source file with a cleaned, analysis-ready version.',features:['Remove blank rows and duplicates','Standardize dates and values','Prepare data for analysis'],tools:['Google Sheets','Excel'],
+        url:'https://docs.google.com/spreadsheets/d/1HdfNWC-rVsEEQP4z77RQUaD20k_vHm2X1JrysnDd4zU/edit?usp=drive_link'}
     ];
+
+    // Kisi bhi pasted link se Sheet ID nikaal kar saaf link banata hai
+    function getSheetId(url){
+      const m=String(url||'').replace(/\s+/g,'').match(/\/d\/([A-Za-z0-9_-]+)/);
+      return m?m[1]:'';
+    }
+    function sheetLink(url){
+      const id=getSheetId(url);
+      return id?`https://docs.google.com/spreadsheets/d/${id}/edit?usp=sharing`:'';
+    }
+    // Check: browser console (F12) mein warning dikhegi agar koi ID 44 characters ki nahi hai
+    projects.forEach(p=>{
+      const id=getSheetId(p.url);
+      if(id.length!==44) console.warn('Check this link (ID length '+id.length+'):',p.title);
+    });
 
     const filters=document.getElementById('filters');
     const grid=document.getElementById('projectsGrid');
@@ -280,16 +298,20 @@
       `).join('');
 
       const visible=projects.filter(project => selected === 'All' || project.category === selected);
-      grid.innerHTML = visible.map(project => `
+      grid.innerHTML = visible.map(project => {
+        const link=sheetLink(project.url);
+        return `
         <article class="project panel">
           <span class="category">${escapeHTML(project.category)}</span>
           <h3>${escapeHTML(project.title)}</h3>
           <p>${escapeHTML(project.description)}</p>
           <ul>${project.features.map(feature => `<li>${escapeHTML(feature)}</li>`).join('')}</ul>
           <div class="tools">${project.tools.map(tool => `<span>${escapeHTML(tool)}</span>`).join('')}</div>
-          <a class="open" href="${sheetBase}${project.id}/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Open demo sheet ↗</a>
-        </article>
-      `).join('');
+          ${link
+            ? `<a class="open" href="${escapeHTML(link)}" target="_blank" rel="noopener noreferrer">Open demo sheet ↗</a>`
+            : `<span class="open soon">Link coming soon</span>`}
+        </article>`;
+      }).join('');
     }
 
     filters.addEventListener('click', event => {
@@ -300,14 +322,6 @@
     });
 
     renderProjects();
-
-    const motionOK = window.matchMedia('(hover: hover) and (pointer: fine)').matches && !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (motionOK) {
-      document.addEventListener('pointermove', event => {
-        document.body.style.setProperty('--mx', `${event.clientX}px`);
-        document.body.style.setProperty('--my', `${event.clientY}px`);
-      });
-    }
 
     const revealItems=document.querySelectorAll('.reveal');
     if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
